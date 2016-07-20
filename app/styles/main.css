@@ -1,0 +1,140 @@
+/*Animations*/
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.2
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.2
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+body {
+    width: 400px;
+    height: 600px;
+    vertical-align: top;
+    overflow-x: hidden;
+    /*margin: 12px 50px;*/
+    padding: 0 15px;
+}
+
+.user-controls {
+  background-color: #e2e2e2;
+  color: #666;
+  padding: 10px 25px;
+  text-align: right;
+  margin: 0 -15px;
+}
+
+.drawer-section .drawer-header {
+    padding: 0;
+}
+
+.section-caption {
+    border-bottom: 1px solid black;
+}
+
+.drawer-section .drawer-header .search-filter input[type='search'] {
+    border-radius: 0;
+    margin-bottom: 0;
+    margin-top: 25px;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px dotted;
+}
+
+.single-drawer {
+  background-color: #fbfbfb;
+}
+
+.single-drawer:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.single-drawer .selected {
+  position: relative;
+  background-color: #0d77e1;;
+  color: #fff !important;
+
+  -webkit-animation: fadeIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: fadeIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+}
+
+.single-drawer .drawer-message {
+  position: absolute;
+  top: -20px;
+  left: 15px;
+  font-size: .6em;
+  font-weight: 700;
+  color: #f4c741;
+}
+
+.drawer-section .single-drawer .drawer-icon {
+    text-align: center;
+    font-size: 48px;
+    padding-top: 10px;
+}
+.drawer-section .single-drawer .drawer-text {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+    line-height: 1.5em;
+    vertical-align: middle;
+}
+
+.drawer-section .single-drawer .drawer-name {
+    font-size: 1.5em;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.single-drawer a {
+  color: #333;
+}
+
+.single-drawer a:hover {
+  color: #337ab7;
+}
+
+.single-drawer .selected a,
+.single-drawer .selected a:hover {
+  color: #fff;
+}
+
+.drawer-section .drawer-header .search-filter .form-control-feedback {
+    top: 25px;
+}
+
+/*
+ * General Styles
+ */
+.btn-primary, .btn-primary[disabled], .btn-primary[disabled]:hover{
+    background: #f4c741;
+    color: #000;
+    border: 1px solid #f4c741;
+    text-transform: uppercase;
+    border-radius: 0;
+ }
+ .btn-primary:hover{
+    background-color: #e9b310;
+    border-color: #d6a411;
+ }
+ .btn-primary:active, .btn-primary:focus, .btn-primary.focus, .btn-primary:active:hover, .btn-primary:active:focus{
+    background: #f4c741;
+    border: 1px solid #c59a1c;
+ }
+
+
