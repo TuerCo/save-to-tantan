@@ -20,7 +20,7 @@
 
 body {
     width: 400px;
-    height: 600px;
+    height: 650px;
     vertical-align: top;
     overflow-x: hidden;
     /*margin: 12px 50px;*/
@@ -137,4 +137,36 @@ a {
     border: 1px solid #c59a1c;
  }
 
+.search-filter .form-control-feedback{
+  right : 10px;
+}
+
+.truncate {
+  width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.pagination {
+  font-weight: bold;
+}
+.pagination li > a {
+  border: none;
+  background-color: none !important;
+}
+.pagination li > a,
+.pagination li a:visited,
+.pagination li a:hover,
+.pagination li a:active {
+  border-radius: 0 !important;
+}
+.pagination li.active a,
+.pagination li.active a:visited,
+.pagination li.active a:hover,
+.pagination li.active a:active {
+  background-color: #f4c741;
+  color: #161f29;
+}
 
